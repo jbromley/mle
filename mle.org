@@ -1,0 +1,45 @@
+#+TITLE: Machine Learning Engineer
+#+AUTHOR: J. Bromley <jbromley@gmail.com>
+
+* Information
+
+* Tasks [0/30]
+** TODO Lesson 1: Welcome to Machine Learning
+** TODO Lesson 2: What is Machine Learning?
+** TODO Lesson 3: Introductory Practice Project
+** TODO Lesson 4: Career Services Available to You
+** TODO Lesson 5: NumPy and pandas Assessment
+** TODO Lesson 6: Training and Testing Models
+** TODO Lesson 7: Evaluation Metrics
+** TODO Lesson 8: Model Selection
+** TODO Lesson 9: NumPy and pandas Assessment
+** TODO Lesson 10: Model Evaluation and Validation Assessment
+** TODO Project: Predicting Boston Housing Prices [0/0]
+   DEADLINE: <2018-08-07 Tue>
+Things to learn by doing this project are
+  - How to explore data and observe features.
+  - How to train and test models.
+  - How to identify potential problems, such as errors due to bias or variance.
+  - How to apply techniques to improve the model, such as cross-validation and grid search.
+** TODO Lesson 12: Linear Regression
+** TODO Lesson 13: Perceptron Algorithm
+** TODO Lesson 14: Decision Trees
+** TODO Lesson 15: Naive Bayes
+** TODO Lesson 16: Support Vector Machines
+** TODO Lesson 17: Ensemble Methods
+** TODO Lesson 18: Supervised Learning Assessment
+** TODO Project: Supervised Learning Project [0/0]
+   DEADLINE: <2018-08-16 Thu>
+** TODO Lesson 20: Clustering
+** TODO Lesson 21: Clustering Mini-Project
+** TODO Lesson 22: Hierarchical and Density-based Clustering
+** TODO Lesson 23: Gaussian Mixture Models and Cluster Validation
+** TODO Lesson 24: Feature Scaling
+** TODO Lesson 25: PCA
+** TODO Lesson 26: PCA Mini-Project
+** TODO Lesson 27: Random Projection and ICA
+** TODO Lesson 28: Unsupervised Learning Assessment
+** TODO Project: Creating Custom Segments
+   DEADLINE: <2018-09-14 Fri>
+** TODO Lesson 30: Congratulations
+
