@@ -5,15 +5,45 @@
 
 * Tasks [0/30]
 ** TODO Lesson 1: Welcome to Machine Learning
+   :PROPERTIES:
+   :Effort:   0:20
+   :END:
 ** TODO Lesson 2: What is Machine Learning?
+   :PROPERTIES:
+   :Effort:   0:45
+   :END:
 ** TODO Lesson 3: Introductory Practice Project
+   :PROPERTIES:
+   :Effort:   2:00
+   :END:
 ** TODO Lesson 4: Career Services Available to You
+   :PROPERTIES:
+   :Effort:   0:01
+   :END:
 ** TODO Lesson 5: NumPy and pandas Assessment
+   :PROPERTIES:
+   :Effort:   0:10
+   :END:
 ** TODO Lesson 6: Training and Testing Models
+   :PROPERTIES:
+   :Effort:   0:02
+   :END:
 ** TODO Lesson 7: Evaluation Metrics
+   :PROPERTIES:
+   :Effort:   0:30
+   :END:
 ** TODO Lesson 8: Model Selection
+   :PROPERTIES:
+   :Effort:   1:00
+   :END:
 ** TODO Lesson 9: NumPy and pandas Assessment
+   :PROPERTIES:
+   :Effort:   0:10
+   :END:
 ** TODO Lesson 10: Model Evaluation and Validation Assessment
+   :PROPERTIES:
+   :Effort:   0:10
+   :END:
 ** TODO Project: Predicting Boston Housing Prices [0/0]
    DEADLINE: <2018-08-07 Tue>
 Things to learn by doing this project are
@@ -22,24 +52,75 @@ Things to learn by doing this project are
   - How to identify potential problems, such as errors due to bias or variance.
   - How to apply techniques to improve the model, such as cross-validation and grid search.
 ** TODO Lesson 12: Linear Regression
+   :PROPERTIES:
+   :Effort:   2:00
+   :END:
 ** TODO Lesson 13: Perceptron Algorithm
+   :PROPERTIES:
+   :Effort:   2:00
+   :END:
 ** TODO Lesson 14: Decision Trees
+   :PROPERTIES:
+   :Effort:   2:00
+   :END:
 ** TODO Lesson 15: Naive Bayes
+   :PROPERTIES:
+   :Effort:   2:00
+   :END:
 ** TODO Lesson 16: Support Vector Machines
+   :PROPERTIES:
+   :Effort:   2:00
+   :END:
 ** TODO Lesson 17: Ensemble Methods
+   :PROPERTIES:
+   :Effort:   1:00
+   :END:
 ** TODO Lesson 18: Supervised Learning Assessment
+   :PROPERTIES:
+   :Effort:   0:20
+   :END:
 ** TODO Project: Supervised Learning Project [0/0]
    DEADLINE: <2018-08-16 Thu>
 ** TODO Lesson 20: Clustering
+   :PROPERTIES:
+   :Effort:   1:30
+   :END:
 ** TODO Lesson 21: Clustering Mini-Project
+   :PROPERTIES:
+   :Effort:   1:00
+   :END:
 ** TODO Lesson 22: Hierarchical and Density-based Clustering
+   :PROPERTIES:
+   :Effort:   2:00
+   :END:
 ** TODO Lesson 23: Gaussian Mixture Models and Cluster Validation
+   :PROPERTIES:
+   :Effort:   2:00
+   :END:
 ** TODO Lesson 24: Feature Scaling
+   :PROPERTIES:
+   :Effort:   0:30
+   :END:
 ** TODO Lesson 25: PCA
+   :PROPERTIES:
+   :Effort:   1:15
+   :END:
 ** TODO Lesson 26: PCA Mini-Project
+   :PROPERTIES:
+   :Effort:   1:00
+   :END:
 ** TODO Lesson 27: Random Projection and ICA
+   :PROPERTIES:
+   :Effort:   2:00
+   :END:
 ** TODO Lesson 28: Unsupervised Learning Assessment
+   :PROPERTIES:
+   :Effort:   0:10
+   :END:
 ** TODO Project: Creating Custom Segments
    DEADLINE: <2018-09-14 Fri>
 ** TODO Lesson 30: Congratulations
+   :PROPERTIES:
+   :Effort:   0:01
+   :END:
 
