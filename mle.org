@@ -2,19 +2,70 @@
 #+AUTHOR: J. Bromley <jbromley@gmail.com>
 
 * Information
-
-* Tasks [0/30]
-** TODO Lesson 1: Welcome to Machine Learning
+** Welcome to Machine Learning
+*** Projects
+    - Model Evaluation Validation: Predicting Boston Housing Prices
+    - Supervised Learning: Finding Donors for CharityML
+    - Unsupervised Learning: Creating Custom Segments
+*** Program Structure
+**** Machine Learning Foundations
+**** Model Evaluation and Validation
+     - training
+     - determining goodness of a model
+     - improving models
+**** Supervised Learning
+     - linear and logistic regression
+     - decision trees
+     - naive Bayes
+     - neural networks
+     - support vector machines
+**** Unsupervised Learning
+     - clustering
+     - dimensionality reduction
+** What is machine learning?
+*** Decision Tree
+Split on most influential factor, then successively on less influential.
+*** Naive Bayes (e.g. spam detector)
+*** Logistic regression
+Error function is log loss probability. The class boundary is a line.
+*** Support vector machines
+Consider points closest to the class boundary. We want the boundary to be as 
+far away from all points as possible.
+*** Neural networks
+A single line may not be a good boundary between classes. We can then use two
+lines.
+*** Kernel method
+Sometimes a set of lines isn't enough to form a good class boundary. Then we 
+can use kernel methods.
+*** K-means clustering
+We must know the number of clusters.
+*** Hierarchical clustering
+We don't know how many clusters, but we know a good distance criteria for 
+splitting points into clusters.
+* Tasks [2/30]
+  :PROPERTIES:
+  :ORDERED:  t
+  :END:
+** DONE Lesson 1: Welcome to Machine Learning
    :PROPERTIES:
    :Effort:   0:20
    :END:
-** TODO Lesson 2: What is Machine Learning?
+   :LOGBOOK:
+   CLOCK: [2018-07-18 Wed 22:30]--[2018-07-18 Wed 22:50] =>  0:20
+   :END:
+** DONE Lesson 2: What is Machine Learning?
    :PROPERTIES:
    :Effort:   0:45
+   :END:
+   :LOGBOOK:
+   CLOCK: [2018-07-18 Wed 22:50]--[2018-07-18 Wed 23:33] =>  0:43
    :END:
 ** TODO Lesson 3: Introductory Practice Project
    :PROPERTIES:
    :Effort:   2:00
+   :END:
+   :LOGBOOK:
+   CLOCK: [2018-07-19 Thu 00:20]--[2018-07-19 Thu 00:56] =>  0:36
    :END:
 ** TODO Lesson 4: Career Services Available to You
    :PROPERTIES:
@@ -80,7 +131,7 @@ Things to learn by doing this project are
    :Effort:   0:20
    :END:
 ** TODO Project: Supervised Learning Project [0/0]
-   DEADLINE: <2018-08-16 Thu>
+   DEADLINE: <2018-08-28 Tue>
 ** TODO Lesson 20: Clustering
    :PROPERTIES:
    :Effort:   1:30
@@ -118,7 +169,7 @@ Things to learn by doing this project are
    :Effort:   0:10
    :END:
 ** TODO Project: Creating Custom Segments
-   DEADLINE: <2018-09-14 Fri>
+   DEADLINE: <2018-09-18 Tue>
 ** TODO Lesson 30: Congratulations
    :PROPERTIES:
    :Effort:   0:01
