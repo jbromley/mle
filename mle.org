@@ -23,6 +23,9 @@
      - clustering
      - dimensionality reduction
 ** What is machine learning?
+** Training and testing models
+Learn about measurement tools that tell us how well our algorithms and working
+and how to make them better.
 *** Decision Tree
 Split on most influential factor, then successively on less influential.
 *** Naive Bayes (e.g. spam detector)
@@ -42,7 +45,51 @@ We must know the number of clusters.
 *** Hierarchical clustering
 We don't know how many clusters, but we know a good distance criteria for 
 splitting points into clusters.
-* Tasks [2/30]
+
+#+NAME: Traing/testing split generator
+#+BEGIN_SRC python
+from sklean.model_selection import train_test_split
+#+END_SRC
+** Evaluation metrics
+*** Confusion matrix
+Lays out true positives, false positives, false negatives, and true negatives.
+Note that false positives are also called type 1 errors (error of the first kind)
+and false negatives are called type 2 errors (error of the second kind).
+*** Accuracy
+Ratio of correctly classified points to total points.
+
+#+NAME: accuracy calculation
+#+BEGIN_SRC python
+from sklean.metrics import accuracy_score
+#+END_SRC
+
+Some times accuracy is not the best measure. For example, saying all credit card
+transactions are good would give high accuracy (there are few fraudulent transactions)
+but not catch any of the fraudulent transactions
+*** False positives and false negatives
+*** Precision and recall
+Precision is true positives / (true positives + false positives). Look at 
+the prediction/classification and see how many are correct.
+Recall is true positives / ( true positives + false negatives). Look at all
+of a class and see how many were correctly classified.
+*** F1 Score
+F1 = 2 * precision * recall / (precision + recall). This is the harmonic mean
+of precision and recall. This tends to the smaller of the values.
+*** F-beta Score
+Allows us to prefer precision to recall or vice versa. Low beta prefers 
+precision and high beta prefers recall.
+F_B = (1 + B^2) * precision * recall / (B^2 * precision + recall)
+*** Receiver Operating Characteristic
+Perfect model has area under curve of 1. A good model should have an area of 
+around 0.8 under the ROC curve, and a random split should give an area of
+0.5.
+*** Regression metrics
+**** mean absolute error
+**** mean squared error
+**** R2 score
+Compares a model to the simplest possible moddle. 
+R2 = 1 - (MAE / MAE_simple)
+* Tasks [7/30]
   :PROPERTIES:
   :ORDERED:  t
   :END:
@@ -60,28 +107,44 @@ splitting points into clusters.
    :LOGBOOK:
    CLOCK: [2018-07-18 Wed 22:50]--[2018-07-18 Wed 23:33] =>  0:43
    :END:
-** TODO Lesson 3: Introductory Practice Project
+** DONE Lesson 3: Introductory Practice Project
    :PROPERTIES:
    :Effort:   2:00
    :END:
    :LOGBOOK:
+   CLOCK: [2018-07-19 Thu 22:08]--[2018-07-19 Thu 22:53] =>  0:45
    CLOCK: [2018-07-19 Thu 00:20]--[2018-07-19 Thu 00:56] =>  0:36
    :END:
-** TODO Lesson 4: Career Services Available to You
+** DONE Lesson 4: Career Services Available to You
    :PROPERTIES:
    :Effort:   0:01
    :END:
-** TODO Lesson 5: NumPy and pandas Assessment
+   :LOGBOOK:
+   CLOCK: [2018-07-19 Thu 22:57]--[2018-07-19 Thu 22:58] =>  0:01
+   :END:
+** DONE Lesson 5: NumPy and pandas Assessment
    :PROPERTIES:
    :Effort:   0:10
    :END:
-** TODO Lesson 6: Training and Testing Models
-   :PROPERTIES:
-   :Effort:   0:02
+   :LOGBOOK:
+   CLOCK: [2018-07-19 Thu 22:59]--[2018-07-19 Thu 23:03] =>  0:04
    :END:
-** TODO Lesson 7: Evaluation Metrics
+** DONE Lesson 6: Training and Testing Models
+   :PROPERTIES:
+   :Effort:   1:30
+   :END:
+   :LOGBOOK:
+   CLOCK: [2018-07-20 Fri 23:10]--[2018-07-20 Fri 23:51] =>  0:41
+   CLOCK: [2018-07-20 Fri 01:17]--[2018-07-20 Fri 01:37] =>  0:43
+   :END:
+** DONE Lesson 7: Evaluation Metrics
    :PROPERTIES:
    :Effort:   0:30
+   :END:
+   :LOGBOOK:
+   CLOCK: [2018-07-21 Sat 23:19]--[2018-07-21 Sat 23:56] =>  0:37
+   CLOCK: [2018-07-21 Sat 00:34]--[2018-07-21 Sat 00:50] =>  0:16
+   CLOCK: [2018-07-20 Fri 23:52]--[2018-07-21 Sat 00:19] =>  0:27
    :END:
 ** TODO Lesson 8: Model Selection
    :PROPERTIES:
