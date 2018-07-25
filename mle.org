@@ -89,7 +89,37 @@ around 0.8 under the ROC curve, and a random split should give an area of
 **** R2 score
 Compares a model to the simplest possible moddle. 
 R2 = 1 - (MAE / MAE_simple)
-* Tasks [7/30]
+** Model Selection
+*** K-fold cross validation
+#+NAME: K-fold cross validation with randomization
+#+BEGIN_SRC python
+from sklearn.model_selection import KFold
+kf = KFold(12, 3, shuffle=True)
+#+END_SRC
+*** Grid search
+#+NAME: Grid search in sklearn
+#+BEGIN_SRC python
+from sklean.model_selection import GridSearchCV
+
+# Define hyperparameters to search over.
+parameters = {"kernel": ["poly", "rbf"], "C": [0.1, 1.0, 10.0]}
+
+# Create a scorer to rate hyperparameter combinations.
+from sklearn.metrics import make_scorer
+from sklearn.metrics import f1_score
+scorer = make_scorer(f1_score)
+
+# Create a grid search object.
+grid_obj = GridSearchCV(clf, parameters, scoring=scorer)
+grid_fit = grid_obj.fit(X, y)
+
+# Get the best estimator.
+best_clf = grid_fit.best_estimator_
+
+# Use best_clf to make predictions.
+#+END_SRC
+
+* Tasks [9/30]
   :PROPERTIES:
   :ORDERED:  t
   :END:
@@ -146,15 +176,15 @@ R2 = 1 - (MAE / MAE_simple)
    CLOCK: [2018-07-21 Sat 00:34]--[2018-07-21 Sat 00:50] =>  0:16
    CLOCK: [2018-07-20 Fri 23:52]--[2018-07-21 Sat 00:19] =>  0:27
    :END:
-** TODO Lesson 8: Model Selection
+** DONE Lesson 8: Model Selection
    :PROPERTIES:
    :Effort:   1:00
    :END:
-** TODO Lesson 9: NumPy and pandas Assessment
-   :PROPERTIES:
-   :Effort:   0:10
+   :LOGBOOK:
+   CLOCK: [2018-07-25 Wed 10:40]--[2018-07-25 Wed 11:23] =>  0:43
+   CLOCK: [2018-07-25 Wed 01:47]--[2018-07-25 Wed 02:20] =>  0:33
    :END:
-** TODO Lesson 10: Model Evaluation and Validation Assessment
+** DONE Lesson 9: Model Evalutation and Validation Assessment
    :PROPERTIES:
    :Effort:   0:10
    :END:
@@ -165,69 +195,69 @@ Things to learn by doing this project are
   - How to train and test models.
   - How to identify potential problems, such as errors due to bias or variance.
   - How to apply techniques to improve the model, such as cross-validation and grid search.
-** TODO Lesson 12: Linear Regression
+** TODO Lesson 11: Linear Regression
    :PROPERTIES:
    :Effort:   2:00
    :END:
-** TODO Lesson 13: Perceptron Algorithm
+** TODO Lesson 12: Perceptron Algorithm
    :PROPERTIES:
    :Effort:   2:00
    :END:
-** TODO Lesson 14: Decision Trees
+** TODO Lesson 13: Decision Trees
    :PROPERTIES:
    :Effort:   2:00
    :END:
-** TODO Lesson 15: Naive Bayes
+** TODO Lesson 14: Naive Bayes
    :PROPERTIES:
    :Effort:   2:00
    :END:
-** TODO Lesson 16: Support Vector Machines
+** TODO Lesson 15: Support Vector Machines
    :PROPERTIES:
    :Effort:   2:00
    :END:
-** TODO Lesson 17: Ensemble Methods
+** TODO Lesson 16: Ensemble Methods
    :PROPERTIES:
    :Effort:   1:00
    :END:
-** TODO Lesson 18: Supervised Learning Assessment
+** TODO Lesson 17: Supervised Learning Assessment
    :PROPERTIES:
    :Effort:   0:20
    :END:
 ** TODO Project: Supervised Learning Project [0/0]
    DEADLINE: <2018-08-28 Tue>
-** TODO Lesson 20: Clustering
+** TODO Lesson 19: Clustering
    :PROPERTIES:
    :Effort:   1:30
    :END:
-** TODO Lesson 21: Clustering Mini-Project
+** TODO Lesson 20: Clustering Mini-Project
    :PROPERTIES:
    :Effort:   1:00
    :END:
-** TODO Lesson 22: Hierarchical and Density-based Clustering
+** TODO Lesson 21: Hierarchical and Density-based Clustering
    :PROPERTIES:
    :Effort:   2:00
    :END:
-** TODO Lesson 23: Gaussian Mixture Models and Cluster Validation
+** TODO Lesson 22: Gaussian Mixture Models and Cluster Validation
    :PROPERTIES:
    :Effort:   2:00
    :END:
-** TODO Lesson 24: Feature Scaling
+** TODO Lesson 23: Feature Scaling
    :PROPERTIES:
    :Effort:   0:30
    :END:
-** TODO Lesson 25: PCA
+** TODO Lesson 24: PCA
    :PROPERTIES:
    :Effort:   1:15
    :END:
-** TODO Lesson 26: PCA Mini-Project
+** TODO Lesson 25: PCA Mini-Project
    :PROPERTIES:
    :Effort:   1:00
    :END:
-** TODO Lesson 27: Random Projection and ICA
+** TODO Lesson 26: Random Projection and ICA
    :PROPERTIES:
    :Effort:   2:00
    :END:
-** TODO Lesson 28: Unsupervised Learning Assessment
+** TODO Lesson 27: Unsupervised Learning Assessment
    :PROPERTIES:
    :Effort:   0:10
    :END:
