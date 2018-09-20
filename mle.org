@@ -240,6 +240,9 @@ Things to learn by doing this project are
    :END:
 ** TODO Project: Supervised Learning Project [0/0]
    DEADLINE: <2018-08-28 Tue>
+   :LOGBOOK:
+   CLOCK: [2018-09-19 Wed 09:04]--[2018-09-19 Wed 10:36] =>  1:32
+   :END:
 ** TODO Lesson 19: Clustering
    :PROPERTIES:
    :Effort:   1:30
