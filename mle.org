@@ -119,7 +119,7 @@ best_clf = grid_fit.best_estimator_
 # Use best_clf to make predictions.
 #+END_SRC
 
-* Tasks [18/29]
+* Tasks [19/29]
   :PROPERTIES:
   :ORDERED:  t
   :END:
@@ -306,13 +306,19 @@ have been one-hot encoded, so this algorithm doesn't seem well-suited.
 **** Disadvantages
      - Can be inefficient to train
      - May have collinearity problems
-** TODO Lesson 19: Clustering
+** DONE Lesson 19: Clustering
    :PROPERTIES:
    :Effort:   1:30
+   :END:
+   :LOGBOOK:
+   CLOCK: [2018-09-21 Fri 13:27]--[2018-09-21 Fri 13:54] =>  0:27
    :END:
 ** TODO Lesson 20: Clustering Mini-Project
    :PROPERTIES:
    :Effort:   1:00
+   :END:
+   :LOGBOOK:
+   CLOCK: [2018-09-21 Fri 14:16]
    :END:
 ** TODO Lesson 21: Hierarchical and Density-based Clustering
    :PROPERTIES:
