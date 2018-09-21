@@ -119,7 +119,7 @@ best_clf = grid_fit.best_estimator_
 # Use best_clf to make predictions.
 #+END_SRC
 
-* Tasks [17/29]
+* Tasks [18/29]
   :PROPERTIES:
   :ORDERED:  t
   :END:
@@ -238,11 +238,74 @@ Things to learn by doing this project are
    :LOGBOOK:
    CLOCK: [2018-09-14 Fri 10:43]--[2018-09-14 Fri 10:53] =>  0:10
    :END:
-** TODO Project: Supervised Learning Project [0/0]
+** DONE Project: Supervised Learning Project
    DEADLINE: <2018-08-28 Tue>
    :LOGBOOK:
+   CLOCK: [2018-09-21 Fri 08:51]--[2018-09-21 Fri 13:19] =>  4:28
    CLOCK: [2018-09-19 Wed 09:04]--[2018-09-19 Wed 10:36] =>  1:32
    :END:
+*** Gaussian Naive Bayes (sklearn.naive_bayes.GaussianNB)
+Better suited for continuous data that likely follows a Gaussian
+distribution. For our use case, there are a lot of categorical features that
+have been one-hot encoded, so this algorithm doesn't seem well-suited.
+*** Decision Trees
+**** Applications
+     - Customer relations management
+     - Detection of fraudulent financial statements
+**** Advantages
+     - Simple to understand and interpret
+     - Can handle both numerical and categorical data
+     - Requires little data preparation
+     - Uses a white box model
+     - Possible to validate a model using statistical tests
+     - Performs well with large data sets
+     - Mirrors human decision making more closely than other algorithms
+**** Limitations
+     - Trees may be non-robust to small changes in the training data
+     - Finding an optimal decision tree is an NP-complete problem, so it cannot
+       be guaranteed that an algorithm will return the optimal decision tree.
+     - For data with categorical features with several levels, the information
+       gain is biased towards categorical features with more levels.
+*** Random Forest ([[http://amateurdatascientist.blogspot.com/2012/01/random-forest-algorithm.html][Machine Learning Madness: Random Forest Algorithm]])
+**** Applications
+     - Analysis of microarray gene expression data [fn:qi2012]
+     - Genome-wide association studies
+**** Advantages
+     - Highly accurate for many data sets [fn:caruana2008]
+     - Can work well with small data sets
+     - Runs efficiently on large data sets
+     - Can handle thousands of input variables
+     - Can estimate what variables are important in the classification
+**** Limitations
+     - Not easily intrepretable
+     - Prone to overfitting if tree depth other tree hyperparameters are not
+       controlled
+*** Support Vector Machines
+**** Applications
+     - One-class SVM for detecting outliers in hospital billing
+     - Solvency analysis in banking [fn:auria2008]
+**** Advantages
+     - Has a regularization parameter to help avoid over-fitting
+     - Uses the kernel trick, so expert knowledge about a problem can be
+       designed into the kernel
+     - Is defined by a convex optimization problem (i.e. no local minima), so
+       there are efficient methods to solve SVMs and obtain a unique result
+     - Scales relatively well to high dimensional data
+**** Disadvantages
+     - Lacks transparency of results and interpretability
+     - Have a long training time for large data sets
+*** Logistic Regression
+**** Applications
+     - Prediction of financial crises [fn:han2008]
+**** Advantages    
+     - Provides probability estimates for classifications
+     - Dependent variables don't have to be normally distributed
+     - No linear relationship between the dependent variables and independent
+       variable is assumed
+     - Can handle non-linear effects, interaction effects, and power terms
+**** Disadvantages
+     - Can be inefficient to train
+     - May have collinearity problems
 ** TODO Lesson 19: Clustering
    :PROPERTIES:
    :Effort:   1:30
@@ -286,3 +349,21 @@ Things to learn by doing this project are
    :Effort:   0:01
    :END:
 
+
+[fn:caruana2008] Caruana, Rich; Karampatziakis, Nikos; Yessenalina, Ainur (2008). 
+"An empirical evaluation of supervised learning in high dimensions". [[http://en.wikipedia.org/wiki/International_Conference_on_Machine_Learning][
+Proceedings of the 25th International Conference on Machine Learning (ICML)]].
+
+
+[fn:qi2012] Qi, Yanjun. "Random forest for bioinformatics." Ensemble machine
+learning. Springer, Boston, MA, 2012. 307-323.
+
+
+[fn:auria2008] Auria, Laura, and Rouslan A. Moro. "Support vector machines (SVM)
+as a technique for solvency analysis." (2008).
+
+
+[fn:han2008] Han, Dongmei, Liqun Ma, and Changrui Yu. "Financial Prediction:
+Application of Logistic Regression with Factor Analysis." Wireless
+Communications, Networking and Mobile Computing, 2008. WiCOM'08. 4th
+International Conference on. IEEE, 2008.
