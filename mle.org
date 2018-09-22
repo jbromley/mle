@@ -119,7 +119,7 @@ best_clf = grid_fit.best_estimator_
 # Use best_clf to make predictions.
 #+END_SRC
 
-* Tasks [19/29]
+* Tasks [21/29]
   :PROPERTIES:
   :ORDERED:  t
   :END:
@@ -188,7 +188,7 @@ best_clf = grid_fit.best_estimator_
    :PROPERTIES:
    :Effort:   0:10
    :END:
-** DONE Project: Predicting Boston Housing Prices [0/0]
+** DONE Project: Predicting Boston Housing Prices
    DEADLINE: <2018-08-07 Tue>
 Things to learn by doing this project are
   - How to explore data and observe features.
@@ -313,16 +313,23 @@ have been one-hot encoded, so this algorithm doesn't seem well-suited.
    :LOGBOOK:
    CLOCK: [2018-09-21 Fri 13:27]--[2018-09-21 Fri 13:54] =>  0:27
    :END:
-** TODO Lesson 20: Clustering Mini-Project
+** DONE Lesson 20: Clustering Mini-Project
    :PROPERTIES:
    :Effort:   1:00
    :END:
    :LOGBOOK:
-   CLOCK: [2018-09-21 Fri 14:16]
+   CLOCK: [2018-09-21 Fri 14:16]--[2018-09-21 Fri 14:38] =>  0:22
    :END:
-** TODO Lesson 21: Hierarchical and Density-based Clustering
+** DONE Lesson 21: Hierarchical and Density-based Clustering
    :PROPERTIES:
    :Effort:   2:00
+   :END:
+   :PROPERTIES:
+   :Effort:   1:00
+   :END:
+   :LOGBOOK:
+   CLOCK: [2018-09-22 Sat 02:00]--[2018-09-22 Sat 02:26] =>  0:26
+   CLOCK: [2018-09-21 Fri 22:42]--[2018-09-21 Fri 23:20] =>  0:38
    :END:
 ** TODO Lesson 22: Gaussian Mixture Models and Cluster Validation
    :PROPERTIES:
@@ -348,7 +355,7 @@ have been one-hot encoded, so this algorithm doesn't seem well-suited.
    :PROPERTIES:
    :Effort:   0:10
    :END:
-** TODO Project: Creating Custom Segments
+** TODO Project: Creating Customer Segments
    DEADLINE: <2018-09-18 Tue>
 ** TODO Lesson 30: Congratulations
    :PROPERTIES:
