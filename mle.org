@@ -119,7 +119,7 @@ best_clf = grid_fit.best_estimator_
 # Use best_clf to make predictions.
 #+END_SRC
 
-* Tasks [21/29]
+* Tasks [27/29]
   :PROPERTIES:
   :ORDERED:  t
   :END:
@@ -331,29 +331,49 @@ have been one-hot encoded, so this algorithm doesn't seem well-suited.
    CLOCK: [2018-09-22 Sat 02:00]--[2018-09-22 Sat 02:26] =>  0:26
    CLOCK: [2018-09-21 Fri 22:42]--[2018-09-21 Fri 23:20] =>  0:38
    :END:
-** TODO Lesson 22: Gaussian Mixture Models and Cluster Validation
+** DONE Lesson 22: Gaussian Mixture Models and Cluster Validation
    :PROPERTIES:
    :Effort:   2:00
    :END:
-** TODO Lesson 23: Feature Scaling
+   :LOGBOOK:
+   CLOCK: [2018-09-24 Mon 21:06]--[2018-09-24 Mon 22:22] =>  1:16
+   :END:
+** DONE Lesson 23: Feature Scaling
    :PROPERTIES:
    :Effort:   0:30
    :END:
-** TODO Lesson 24: PCA
+   :LOGBOOK:
+   CLOCK: [2018-09-24 Mon 22:30]--[2018-09-24 Mon 22:58] =>  0:28
+   :END:
+
+** DONE Lesson 24: PCA
    :PROPERTIES:
    :Effort:   1:15
    :END:
-** TODO Lesson 25: PCA Mini-Project
+   :LOGBOOK:
+   CLOCK: [2018-09-24 Mon 23:30]--[2018-09-25 Tue 00:06] =>  0:36
+   CLOCK: [2018-09-24 Mon 22:58]--[2018-09-25 Tue 03:18] =>  4:20
+   :END:
+** DONE Lesson 25: PCA Mini-Project
    :PROPERTIES:
    :Effort:   1:00
    :END:
-** TODO Lesson 26: Random Projection and ICA
+   :LOGBOOK:
+   CLOCK: [2018-09-25 Tue 03:19]--[2018-09-25 Tue 03:36] =>  0:17
+   :END:
+** DONE Lesson 26: Random Projection and ICA
    :PROPERTIES:
    :Effort:   2:00
    :END:
-** TODO Lesson 27: Unsupervised Learning Assessment
+   :LOGBOOK:
+   CLOCK: [2018-09-25 Tue 03:45]--[2018-09-25 Tue 04:16] =>  0:31
+   :END:
+** DONE Lesson 27: Unsupervised Learning Assessment
    :PROPERTIES:
    :Effort:   0:10
+   :END:
+   :LOGBOOK:
+   CLOCK: [2018-09-25 Tue 04:16]--[2018-09-25 Tue 04:16] =>  0:00
    :END:
 ** TODO Project: Creating Customer Segments
    DEADLINE: <2018-09-18 Tue>
