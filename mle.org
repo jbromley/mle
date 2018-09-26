@@ -119,7 +119,7 @@ best_clf = grid_fit.best_estimator_
 # Use best_clf to make predictions.
 #+END_SRC
 
-* Tasks [27/29]
+* Tasks [28/29]
   :PROPERTIES:
   :ORDERED:  t
   :END:
@@ -375,8 +375,12 @@ have been one-hot encoded, so this algorithm doesn't seem well-suited.
    :LOGBOOK:
    CLOCK: [2018-09-25 Tue 04:16]--[2018-09-25 Tue 04:16] =>  0:00
    :END:
-** TODO Project: Creating Customer Segments
+** DONE Project: Creating Customer Segments
    DEADLINE: <2018-09-18 Tue>
+   :LOGBOOK:
+   CLOCK: [2018-09-25 Tue 22:16]--[2018-09-26 Wed 06:01] =>  7:45
+   CLOCK: [2018-09-25 Tue 11:45]--[2018-09-25 Tue 13:46] =>  2:01
+   :END:
 ** TODO Lesson 30: Congratulations
    :PROPERTIES:
    :Effort:   0:01
