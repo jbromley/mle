@@ -1,0 +1,204 @@
+#+TITLE: Machine Learning Engineer 2: Advanced Machine Learning
+#+AUTHOR: J. Bromley <jbromley@gmail.com>
+
+* Lessons [2/25]
+  :PROPERTIES:
+  :ORDERED:  t
+  :END:
+** DONE 1: Welcome to Advanced Machine Learning
+   CLOSED: [2019-03-25 Mon 23:45]
+   :PROPERTIES:
+   :Effort:   0:20
+   :END: 
+** DONE 2: Neural Networks
+   CLOSED: [2019-03-26 Tue 01:41]
+   :PROPERTIES:
+   :Effort:   2:00
+   :END:
+   :LOGBOOK:
+   CLOCK: [2019-03-25 Mon 23:46]--[2019-03-26 Tue 01:41] =>  1:55
+   CLOCK: [2019-03-24 Sun 21:00]--[2019-03-24 Sun 22:00] =>  1:00
+   :END:
+Overview of logistic regression, gradient descent, and the building blocks of
+neural networks.
+*** Softmax
+    - Equivalent of sigmoid function for problems with three or more classes
+    - P(i) = exp(z_i) / sum_k=1^n exp(z_k)
+*** One-hot encoding
+Use a vector of 1/0 bits to represent multiple classes. Only one bit can be set
+at a time
+*** Maximum Likelihood
+Pick a model that gives existing labels the highest probability.
+*** Maximizing Probabilities
+Is there some link between error functions and maximum probabilities? Can we get
+an error function from the probabilities?
+*** Cross-entropy
+Take the sum of the negative logarithms of the probabilities.
+*** Multi-Class Cross Entropy
+*** Logistic Regression
+Minimize erf = -(1/m) sum_i=1^m (1 - y_i) ln (1 - yhat_i) + y_i ln (yhat_i)
+where yhat = Wx + b.
+*** Gradient Descent
+*** Logistic Regression Algorithm
+Ends up looking a lot like the perceptron algorithm, since error points add a
+multiple of themselves to the new weights in each stop.
+*** Pre-lab: Gradient Descent
+*** Gradient Descent Algorithm
+See gradient_descent/GradientDescent.ipynb for an implementation.
+** TODO 3: Cloud Computing
+   :PROPERTIES:
+   :Effort:   0:40
+   :END:
+Take advantage of Amazon's GPUs to train your neural network faster. In this
+lesson, you'll set up an instance on AWS and train a neural network on a GPU.
+** TODO 4: Deep Neural Networks
+   :PROPERTIES:
+   :Effort:   3:00
+   :END:
+A deeper dive into backpropagation and the training process of neural networks,
+including techniques to improve the training.
+** TODO 5: Convolutional Neural Networks
+   :PROPERTIES:
+   :Effort:   10:00
+   :END:
+
+Theory behind Convolutional Neural Networks and how they help us dramatically
+improve performance in image classification.
+** TODO 6: Deep Learning for Cancer Detection
+   :PROPERTIES:
+   :Effort:   2:00
+   :END:
+Learn about Sebastian Thrun's groundbreaking work detecting skin cancer with
+convolutional neural networks.
+** TODO 7: Deep Learning Assessment
+   :PROPERTIES:
+   :Effort:   0:15
+   :END:
+Test your Deep Learning concepts with a quick assessment.
+** TODO 8: Project - Deep Learning Project
+Implement a CNN to recognize dog breeds.
+** TODO 9: Introduction to RL
+   :PROPERTIES:
+   :Effort:   1:00
+   :END:
+Reinforcement learning is a type of machine learning where the machine or
+software agent learns how to maximize its performance at a task.
+** TODO 10: The RL Framework: The Problem
+   :PROPERTIES:
+   :Effort:   3:00
+   :END:
+Learn how to mathematically formulate tasks as Markov Decision Processes.
+** TODO 11: The RL Framework: The Solution
+   :PROPERTIES:
+   :Effort:   3:00
+   :END:
+In reinforcement learning, agents learn to prioritize different decisions based
+on the rewards and punishments associated with different outcomes.
+** TODO 12: Dynamic Programming
+   :PROPERTIES:
+   :Effort:   8:00
+   :END:
+The dynamic programming settings is a useful first step towards tackling the
+reinforcement learning problem.
+** TODO 13: Monte Carlo Methods
+   :PROPERTIES:
+   :Effort:   8:00
+   :END:
+Write your own implementation of Monte Carlo control to teach an agent to play
+Blackjack!
+** TODO 14: Temporal-Difference Methods
+   :PROPERTIES:
+   :Effort:   8:00
+   :END:
+Learn about how to apply temporal-difference methods such as Sarsa, Q-Learning,
+and Expected Sarsa to solve both episodic and continuous tasks.
+** TODO 15: Solve OpenAI Gym's Taxi-v2 Task
+   :PROPERTIES:
+   :Effort:   2:00
+   :END:
+With reinforcement learning now in your toolbox, you're ready to explore a mini
+project using OpenAI Gym.
+** TODO 16: RL in Continuous Spaces
+   :PROPERTIES:
+   :Effort:   0:30
+   :END:
+Review the fundamental concepts of reinforcement learning, and learn how to
+adapter traditional algorithms to work with continuous spaces.
+** TODO 17: Deep Q-Learning
+   :PROPERTIES:
+   :Effort:   1:00
+   :END:
+Extend value-based reinforcement learning methods to complex problems using deep
+neural networks.
+** TODO 18: Policy-Based Methods
+   :PROPERTIES:
+   :Effort:   0:45
+   :END:
+Policy-based methods try to directly optimize for the optimal policy. Learn how
+they work, and why they are important, especially for domains with continuous
+action spaces.
+** TODO 19: Actor-Critic Methods
+   :PROPERTIES:
+   :Effort:   0:30
+   :END:
+Learn how to combine value-based and policy-based methods, bringing together the
+best of both worlds, to solve challenging reinforcement learning problems.
+** TODO 20: Project - Teach a Quadcopter How to Fly
+Build a quadcopter flying agent that learns to take off, hover, and land using
+reinforcement learning.
+** TODO 21: Reinforcement Learning Assessment
+   :PROPERTIES:
+   :Effort:   0:10
+   :END:
+Test your understanding of reinforcement learning with a quick assessment.
+** TODO 22: Project - Optimize Your GitHub Profile
+Other professionals are collaborating on GitHub and growing their network.
+Submit your profile to ensure your profile is on par with leaders in your field.
+** TODO 23: Project - Strengthen Your Online Presence Using LinkedIn
+Find your next job or connect with industry peers on LinkedIn. Ensure your
+profile attracts relevant leads that will grow your professional network.
+** TODO 24: Project - Writing up a Capstone Proposal
+Before working on a machine learning problem, write up a proposal of your
+project to get valuable feedback.
+** TODO 25: Project - Machine Learning Capstone Project
+Now you will put your machine learning skills to the test by solving a real
+world problem using the algorithms you have learned in the program so far.
+* Extracurricular: Deep Learning - TensorFlow
+** TODO 1: Software and Tools
+   :PROPERTIES:
+   :Effort:   1:00
+   :END:
+How to set up TensorFlow and fetch assignment starter code.
+** TODO 2: Deep Learning
+   :PROPERTIES:
+   :Effort:   0:30
+   :END:
+
+Now that you've been exposed to various types of learning (supervised,
+unsupervised, and reinforcement), it's time to get a /deeper/ understanding of
+machine learning with deep learning!
+** TODO 3: Intro to TensorFlow
+   :PROPERTIES:
+   :Effort:   2:00
+   :END:
+This lesson covers the basics of TensorFlow and how to get started creating a
+simple classifier using this library.
+** TODO 4: Intro to Neural Networks
+   :PROPERTIES:
+   :Effort:   1:00
+   :END:
+In this lesson, you'll dive deeper into the intuition behind logistic regression
+and neural networks. You'll also implement gradient descent and backpropagation
+in Python right here in the classroom.
+** TODO 5: Deep Neural Networks
+   :PROPERTIES:
+   :Effort:   2:00
+   :END:
+Walk through how to go from a simple neural network to a deep neural network.
+Learn about why additional layers can help and how to prevent overfitting.
+** TODO 6: Convolutional Neural Networks
+   :PROPERTIES:
+   :Effort:   2:00
+   :END:
+Theory behind convolutional neural networks and how they help us dramatically
+improve performance in image classification.
