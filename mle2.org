@@ -49,8 +49,14 @@ See gradient_descent/GradientDescent.ipynb for an implementation.
    :PROPERTIES:
    :Effort:   0:40
    :END:
+   :LOGBOOK:
+   CLOCK: [2019-03-26 Tue 01:48]--[2019-03-26 Tue 02:13] =>  0:25
+   :END:
 Take advantage of Amazon's GPUs to train your neural network faster. In this
 lesson, you'll set up an instance on AWS and train a neural network on a GPU.
+*** Approved for $100 credit
+Waiting for the code to be emailed. Needs to be redeemed at My Billing Dashboard
+-> Credits.
 ** TODO 4: Deep Neural Networks
    :PROPERTIES:
    :Effort:   3:00
