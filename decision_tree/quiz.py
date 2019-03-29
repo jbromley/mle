@@ -1,14 +1,15 @@
-# Import statements 
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.metrics import accuracy_score
-import pandas as pd
+# Import statements
 import numpy as np
+import pandas as pd
+
+from sklearn.metrics import accuracy_score
+from sklearn.tree import DecisionTreeClassifier
 
 # Read the data.
 data = np.asarray(pd.read_csv('data.csv', header=None))
-# Assign the features to the variable X, and the labels to the variable y. 
-X = data[:,0:2]
-y = data[:,2]
+# Assign the features to the variable X, and the labels to the variable y.
+X = data[:, 0:2]
+y = data[:, 2]
 
 # TODO: Create the decision tree model and assign it to the variable model.
 # You won't need to, but if you'd like, play with hyperparameters such
