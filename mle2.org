@@ -1,7 +1,7 @@
 #+TITLE: Machine Learning Engineer 2: Advanced Machine Learning
 #+AUTHOR: J. Bromley <jbromley@gmail.com>
 
-* Lessons [2/25]
+* Lessons [3/25]
   :PROPERTIES:
   :ORDERED:  t
   :END:
@@ -45,11 +45,13 @@ multiple of themselves to the new weights in each stop.
 *** Pre-lab: Gradient Descent
 *** Gradient Descent Algorithm
 See gradient_descent/GradientDescent.ipynb for an implementation.
-** TODO 3: Cloud Computing
+** DONE 3: Cloud Computing
+   CLOSED: [2019-03-27 Wed 01:58]
    :PROPERTIES:
    :Effort:   0:40
    :END:
    :LOGBOOK:
+   CLOCK: [2019-03-27 Wed 01:15]--[2019-03-27 Wed 01:58] =>  0:43
    CLOCK: [2019-03-26 Tue 01:48]--[2019-03-26 Tue 02:13] =>  0:25
    :END:
 Take advantage of Amazon's GPUs to train your neural network faster. In this
@@ -57,12 +59,42 @@ lesson, you'll set up an instance on AWS and train a neural network on a GPU.
 *** Approved for $100 credit
 Waiting for the code to be emailed. Needs to be redeemed at My Billing Dashboard
 -> Credits.
+*** Get Access to GPU Instances
+    - Use the [[https://aws.amazon.com/marketplace/pp/B077GF11NF][Deep Learning AMI (Amazon Linux)]]
+    - Had to request limit increase to 1 p2.xlarge instance
+*** Launch an instance
+Named the instance "DeepThought".
+*** Login to the instance
+#+BEGIN_SRC: sh
+ssh -i ~/.ssh/machine-learning-ami.pem ubuntu@ec2-52-43-65-103.us-west-2.compute.amazonaws.com
+#+END_SRC
+
 ** TODO 4: Deep Neural Networks
    :PROPERTIES:
    :Effort:   3:00
    :END:
+   :LOGBOOK:
+   CLOCK: [2019-03-28 Thu 01:15]--[2019-03-28 Thu 02:06] =>  0:51
+   CLOCK: [2019-03-27 Wed 02:01]--[2019-03-27 Wed 02:22] =>  0:21
+   :END:
 A deeper dive into backpropagation and the training process of neural networks,
 including techniques to improve the training.
+*** Non-linear data
+Until now we've dealt with linearly separable sets. We will now start dealing
+with non-linear data.
+*** Continuous Perceptrons
+*** Non-linear Models
+*** Neural Network Architecture
+We combine two linear models to make a non-linear model. We add the two
+perceptron outputs and apply the sigmoid function. The models can be weighted
+when they are combined.
+
+Neural network architectures can be made more complicate by
+- Adding more nodes to the input, hidden, and output layers
+- Adding more layers.
+
+To do multi-class classification, we need to add more nodes to the output
+layer - one node for each class.
 ** TODO 5: Convolutional Neural Networks
    :PROPERTIES:
    :Effort:   10:00
