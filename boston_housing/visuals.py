@@ -9,8 +9,8 @@ import numpy as np
 # Display inline matplotlib plots with IPython
 from IPython import get_ipython
 
-import sklearn.learning_curve as curves
-from sklearn.cross_validation import ShuffleSplit, train_test_split
+from sklearn.model_selection import learning_curve
+from sklearn.model_selection import ShuffleSplit, train_test_split
 from sklearn.tree import DecisionTreeRegressor
 
 warnings.filterwarnings("ignore", category=UserWarning, module="matplotlib")
@@ -24,7 +24,7 @@ def ModelLearning(X, y):
         The learning and testing scores for each model are then plotted. """
 
     # Create 10 cross-validation sets for training and testing
-    cv = ShuffleSplit(X.shape[0], n_iter=10, test_size=0.2, random_state=0)
+    cv = ShuffleSplit(X.shape[0], test_size=0.2, random_state=0)
 
     # Generate the training set sizes increasing by 50
     train_sizes = np.rint(np.linspace(1, X.shape[0] * 0.8 - 1, 9)).astype(int)
@@ -39,7 +39,7 @@ def ModelLearning(X, y):
         regressor = DecisionTreeRegressor(max_depth=depth)
 
         # Calculate the training and testing scores
-        sizes, train_scores, test_scores = curves.learning_curve(regressor, X, y, \
+        sizes, train_scores, test_scores = learning_curve(regressor, X, y, \
             cv = cv, train_sizes = train_sizes, scoring = 'r2')
 
         # Find the mean and standard deviation for smoothing
